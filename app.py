@@ -65,7 +65,9 @@ def get_current_temperature(city, api_key):
         return None, data  
     return data["main"]["temp"], None
 
-st.title("~Weather Analysis App~")
+st.title("Weather Analysis App")
+st.write("Здравствуйте, дорогие пользователи и Дима! В этом приложении вы можете загрузить исторические данные о температуре, проанализировать их и сравнить с текущими данными из OpenWeatherMap Api. ^-^")
+st.image("https://i.pinimg.com/736x/d1/f9/19/d1f919d11670c01751c051b77a97ca99.jpg", caption="Зачем приложение, когда есть болт")
 
 historic_file = st.file_uploader("Пожалуйста, загрузите файл с историческими данными в формате .csv в это поле", type="csv")
 if historic_file is not None:
