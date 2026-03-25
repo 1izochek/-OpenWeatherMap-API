@@ -6,7 +6,7 @@ import aiohttp
 import asyncio
 
 
-API_KEY = "3c067460e0c10ebf0990cbf34ad4e9a2"
+API_KEY = "секрет"
 
 df_hist = pd.read_csv("temperature_data.csv", parse_dates=["timestamp"])
 df_hist, stats, anomalies = analyzing_temp(df_hist)
